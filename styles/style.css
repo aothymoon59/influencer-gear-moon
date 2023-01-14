@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
 /* Google fonts Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/* Google fonts roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /* Google fonts manrope */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 
 :root {
   --primary-fonts: "Poppins", sans-serif;
   --secondary-fonts: "Inter", sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
   --footer-fonts: "Manrope", sans-serif;
   --primary-color: #3a3a3a;
   --pink-color: #e02c6d;
@@ -24,15 +27,13 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 50px;
 }
 
 /* Nav Bar Styles */
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .nav-title {
@@ -104,4 +105,89 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* Company section styles */
+.company-wrapper {
+  display: flex;
+  gap: 61px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border-top: 1px solid #00000014;
+  border-bottom: 1px solid #00000014;
+}
+
+/* Products section styles */
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.see-more-btn {
+  text-decoration: none;
+  color: var(--pink-color);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.product {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.products-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: #3A3A3A;
+  padding: 20px 0px;
+}
+
+.product-name {
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191F;
+  margin: 12px 0 6px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--secondary-fonts);
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 5px;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #FF7A00;
+}
+
+.product-rating span {
+  font-weight: 700;
+  margin-left: 8px;
+  color: #5E6366;
+  font-family: var(--font-roboto);
+}
+
+.product-desc {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--secondary-fonts);
+  color: #787885;
+  margin-top: 5px;
 }
