@@ -7,6 +7,11 @@
 /* Google fonts manrope */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 
+
+/*-------------------------------------------
+       Global and common styles 
+---------------------------------------------*/
+
 :root {
   --primary-fonts: "Poppins", sans-serif;
   --secondary-fonts: "Inter", sans-serif;
@@ -48,7 +53,9 @@
   font-size: 16px;
 }
 
-/* Nav Bar Styles */
+/*------------------------
+  Nav Bar Styles 
+-------------------------*/
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -73,7 +80,9 @@
   color: var(--primary-color);
 }
 
-/* Banner section styles */
+/*---------------------------
+ Banner section styles 
+----------------------------*/
 .banner {
   display: flex;
   align-items: center;
@@ -114,7 +123,9 @@
   border-radius: 41px;
 }
 
-/* Company section styles */
+/*---------------------------
+   Company section styles 
+----------------------------*/
 .company-wrapper {
   display: flex;
   gap: 61px;
@@ -126,7 +137,9 @@
   border-bottom: 1px solid #00000014;
 }
 
-/* Products section styles */
+/*------------------------------
+   Products section styles 
+-------------------------------*/
 .products-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,7 +213,9 @@
   margin-top: 5px;
 }
 
-/* Feature sectio styles */
+/*-----------------------
+ Feature section styles 
+ ------------------------*/
 .feature.container {
   display: flex;
   gap: 96px;
@@ -232,7 +247,9 @@
   color: #6C6C6C;
 }
 
-/* Footer styles */
+/*-----------------
+  Footer styles
+  --------------- */
 .footer {
   background-color: #0A0826;
   margin-top: 50px;
