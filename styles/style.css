@@ -131,7 +131,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .see-more-btn {
@@ -268,10 +269,141 @@
 }
 
 .footer-contact a {
-  font-size: 32px;
-  padding: 8px;
+  font-size: 16px;
+  padding: 5px;
+  width: 32px;
   background-color: #22213C;
   border-radius: 50%;
   text-align: center;
   color: #ffffff;
+}
+
+/*====================
+   Responsive styles
+======================*/
+
+@media only screen and (max-width:600px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  /* Navbar styles */
+  .nav-bar,
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Banner styles */
+  section.banner {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+
+  .banner-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-right {
+    width: 80%;
+  }
+
+  .banner-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .banner-desc {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .banner-btn {
+    margin: 0 auto;
+  }
+
+  /* Company section styles */
+  .company-wrapper {
+    border: 0;
+    gap: 55px;
+    padding: 0;
+  }
+
+  /* Products section  */
+  .products-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .products-title {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .product-name {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .product-price {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .product-rating {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .product-desc {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* Feature styles */
+  .feature.container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .feature-left {
+    width: 100%;
+  }
+
+  .feature-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2.feature-title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  /* Footer styles  */
+  .footer {
+    margin-top: 25px;
+  }
+
+  .footer-title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .footer-desc {
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.hide {
+  display: none;
 }
