@@ -30,6 +30,24 @@
   padding: 50px;
 }
 
+.banner-btn,
+.feature-btn {
+  text-decoration: none;
+}
+
+.banner-btn button,
+.feature-btn button {
+  border: 0;
+  background-color: var(--pink-color);
+  color: #ffffff;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 /* Nav Bar Styles */
 .nav-bar {
   display: flex;
@@ -92,19 +110,8 @@
   margin: 16px 0;
 }
 
-.banner-btn {
-  text-decoration: none;
-}
-
 .banner-btn button {
-  border: 0;
-  background-color: var(--pink-color);
-  color: #ffffff;
-  padding: 10px 24px;
   border-radius: 41px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 /* Company section styles */
@@ -190,4 +197,81 @@
   font-family: var(--secondary-fonts);
   color: #787885;
   margin-top: 5px;
+}
+
+/* Feature sectio styles */
+.feature.container {
+  display: flex;
+  gap: 96px;
+  align-items: center;
+}
+
+.feature-left {
+  width: 35%;
+}
+
+.feature-left img {
+  width: 100%;
+}
+
+.feature-right {
+  width: 65%;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 2.3em;
+  color: #0A0826;
+}
+
+.feature-desc {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 16px 0;
+  color: #6C6C6C;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #0A0826;
+  margin-top: 50px;
+  width: 100%;
+  padding: 50px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.footer-desc {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 3px 0px;
+  color: #D9DBE1;
+  font-family: var(--footer-fonts);
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 17px;
+}
+
+.footer-contact a {
+  font-size: 32px;
+  padding: 8px;
+  background-color: #22213C;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
 }
